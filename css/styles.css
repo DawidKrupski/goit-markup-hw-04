@@ -15,6 +15,7 @@
   --header-border: #ececec;
   --icon-background: rgba(255, 255, 255, 0.1);
   --icon-color: #eeeeee;
+  --team-icons-color: #afb1b8;
 }
 body {
   font-family: "roboto", "raleway", sans-serif;
@@ -270,6 +271,7 @@ body {
   height: 44px;
   border: 0px solid var(--thid-background);
   border-radius: 50%;
+  fill: var(--team-icons-color);
 }
 /* ----------TEAM-END---------- */
 
