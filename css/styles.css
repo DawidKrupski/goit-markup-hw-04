@@ -13,6 +13,8 @@
   --footer-kontakt: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
   --header-border: #ececec;
+  --icon-background: rgba(255, 255, 255, 0.1);
+  --icon-color: #eeeeee;
 }
 body {
   font-family: "roboto", "raleway", sans-serif;
@@ -76,7 +78,7 @@ body {
   letter-spacing: 0.02em;
   list-style: none;
   display: flex;
-  margin-right: 371px;
+  margin-right: 340px;
 }
 
 .menu-items > a {
@@ -96,13 +98,20 @@ body {
 .header-contact {
   display: flex;
 }
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+.icons {
+  gap: 10px;
+  display: flex;
+}
 .mail {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--info-color);
   text-decoration: none;
-  margin-right: 50px;
 }
 
 .tel {
@@ -111,6 +120,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--info-color);
   text-decoration: none;
+  margin-left: 50px;
 }
 .mail:hover,
 .mail:focus,
@@ -246,6 +256,19 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.team-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.team-icons > li {
+  list-style: none;
+  width: 44px;
+  height: 44px;
+  border: 0px solid var(--thid-background);
+  border-radius: 50%;
+}
 /* ----------TEAM-END---------- */
 
 /* ====================MAIN-END==================== */
@@ -255,23 +278,37 @@ body {
 /* ====================FOOTER-START==================== */
 
 .sign {
-  height: 252px;
   background: var(--secound-background);
+}
+.footer-position {
   display: flex;
+  align-items: baseline;
+}
+.footer-info {
+  display: flex;
+  margin-right: 70px;
   flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-info > .logo {
+  padding-top: 0px;
+  padding-bottom: 20px;
 }
 .contact {
-  width: 246px;
-  height: 81px;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 9px;
 }
-.contact address {
+.contact,
+.address {
   color: var(--secound-text);
   font-style: normal;
+  display: flex;
 }
-.footer-mail,
+.footer-mail {
+  color: var(--footer-kontakt);
+  text-decoration: none;
+}
 .footer-tel {
   color: var(--footer-kontakt);
   text-decoration: none;
@@ -282,7 +319,29 @@ body {
 .footer-tel:hover {
   color: var(--link-focus);
 }
-
+.join {
+  display: flex;
+  flex-direction: column;
+  color: var(--secound-text);
+}
+.join > p {
+  font-weight: 700;
+  line-height: 1.14;
+  margin-bottom: 20px;
+}
+.join-icons {
+  display: flex;
+  gap: 10px;
+}
+.join-icons > li {
+  width: 44px;
+  height: 44px;
+  border: 0px solid var(--icon-background);
+  border-radius: 50%;
+  list-style: none;
+  background-color: var(--icon-background);
+  fill: var(--icon-color);
+}
 /* ====================FOOTER-END==================== */
 
 /* ====================================INDEX-END====================================== */
