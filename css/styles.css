@@ -211,7 +211,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
+.secound-icon {
+  fill: #212121;
+}
 /* ----------WORKING-ON-END---------- */
 
 /* ----------TEAM-START---------- */
