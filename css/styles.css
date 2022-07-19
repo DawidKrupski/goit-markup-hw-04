@@ -15,7 +15,7 @@
   --header-border: #ececec;
   --icon-background: rgba(255, 255, 255, 0.1);
   --icon-color: #eeeeee;
-  --team-icons-color: #afb1b8;
+  --secound-icons-color: #afb1b8;
 }
 body {
   font-family: "roboto", "raleway", sans-serif;
@@ -106,6 +106,7 @@ body {
 .icons {
   gap: 10px;
   display: flex;
+  fill: var(--info-color);
 }
 .mail {
   font-weight: 500;
@@ -128,6 +129,7 @@ body {
 .tel:hover,
 .tel:focus {
   color: var(--link-focus);
+  fill: var(--link-focus);
 }
 
 /* ----------MENU-END---------- */
@@ -144,6 +146,11 @@ body {
   background: var(--secound-background);
   margin-bottom: 94px;
   padding: 200px 0;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-image.jpg);
 }
 .slogan-text {
   font-weight: 900;
@@ -190,6 +197,10 @@ body {
 }
 .article-list > li > p {
   color: var(--article-text);
+}
+.article-icon {
+  background-color: var(--thid-background);
+  margin-bottom: 30px;
 }
 
 /* ----------ARTICLE-END---------- */
@@ -271,9 +282,47 @@ body {
   height: 44px;
   border: 0px solid var(--thid-background);
   border-radius: 50%;
-  fill: var(--team-icons-color);
+  fill: var(--secound-icons-color);
 }
+.team-icons > li:hover,
+.team-icons > li:focus {
+  background-color: var(--main-color);
+  fill: var(--focus-color);
+}
+
 /* ----------TEAM-END---------- */
+
+/* ----------CLIENTS-START---------- */
+
+.clients {
+  margin-top: 94px;
+  padding-bottom: 94px;
+}
+.client-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.our-clients {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.our-clients > li {
+  outline: 1px solid var(--secound-icons-color);
+  border-radius: 4px;
+  fill: var(--secound-icons-color);
+}
+.our-clients > li:hover,
+.our-clients > li:focus {
+  border-color: var(--main-color);
+  fill: var(--main-color);
+}
+
+/* ----------CLIENTS-END---------- */
 
 /* ====================MAIN-END==================== */
 
@@ -346,6 +395,10 @@ body {
   background-color: var(--icon-background);
   fill: var(--icon-color);
 }
+.join-icons > li:hover,
+.join-icons > li:focus {
+  background-color: var(--main-color);
+}
 /* ====================FOOTER-END==================== */
 
 /* ====================================INDEX-END====================================== */
@@ -398,6 +451,10 @@ body {
   gap: 30px;
   margin-bottom: 94px;
 }
+.expiriences-list li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .expiriences-list li {
   display: flex;
   flex-direction: column;
@@ -420,6 +477,7 @@ body {
   border-right: 1px solid var(--border-color);
   padding: 20px 24px;
 }
+
 /* ----------EXPIERIENCES-END---------- */
 
 /* ====================MAIN-END==================== */
