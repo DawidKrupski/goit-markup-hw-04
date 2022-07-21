@@ -41,6 +41,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.base-img {
+  display: block;
+  object-fit: cover;
+}
 /* ====================HEADER-START==================== */
 
 .header-border {
@@ -287,14 +291,16 @@ body {
 }
 .team-icons > li {
   list-style: none;
+}
+.team-icons > li > a {
   width: 44px;
   height: 44px;
+  fill: var(--secound-icons-color);
   border: 0px solid var(--thid-background);
   border-radius: 50%;
-  fill: var(--secound-icons-color);
 }
-.team-icons > li:hover,
-.team-icons > li:focus {
+.team-icons > li > a:hover,
+.team-icons > li > a:focus {
   background-color: var(--main-color);
   fill: var(--focus-color);
 }
@@ -320,16 +326,16 @@ body {
   list-style: none;
   gap: 30px;
 }
-.our-clients > li {
+.our-clients > li > a {
   outline: 1px solid var(--secound-icons-color);
   border-radius: 4px;
   fill: var(--secound-icons-color);
   width: 170px;
   height: 92px;
 }
-.our-clients > li:hover,
-.our-clients > li:focus {
-  border-color: var(--main-color);
+.our-clients > li > a:hover,
+.our-clients > li > a:focus {
+  outline-color: var(--main-color);
   fill: var(--main-color);
 }
 
@@ -397,8 +403,9 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
+  list-style: none;
 }
-.join-icons > li {
+.join-icons > li > a {
   display: flex;
   width: 44px;
   height: 44px;
@@ -408,8 +415,8 @@ body {
   background-color: var(--icon-background);
   fill: var(--icon-color);
 }
-.join-icons > li:hover,
-.join-icons > li:focus {
+.join-icons > li > a:hover,
+.join-icons > li > a:focus {
   background-color: var(--main-color);
 }
 /* ====================FOOTER-END==================== */
