@@ -471,13 +471,16 @@ body {
   gap: 30px;
   margin-bottom: 94px;
 }
-.expiriences-list li:hover {
+.expiriences-list li a:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.expiriences-list li {
+.expiriences-list li a {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: var(--text);
+  margin: 0px;
 }
 .experience-header {
   font-weight: 700;
@@ -486,7 +489,7 @@ body {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-.experiences-border > p {
+.experiences-border > a > p {
   font-size: 16px;
   line-height: 1.89;
   color: var(--info-color);
